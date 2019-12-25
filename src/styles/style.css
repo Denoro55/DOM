@@ -1,0 +1,25 @@
+html {
+	font-family: Arial;
+	padding: 20px;
+}
+
+.item {
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.item button {
+	margin-left: 10px;
+}
+
+ul {
+	padding: 0 10px;
+}
+
+.app {
+	width: 300px;
+}
+
+img {
+	max-width: 100%;
+}
