@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
+	<h2>Virtual DOM</h2>
 	<div class="app"></div>
 	<h2>Тест поиска по дереву</h2>
 	<div class="content">
@@ -20,7 +21,35 @@
 		</div>
 		<div class="footer">Footer</div>
 	</div>
+	<h2>Фильтрация</h2>
+	<form>
+		<div>
+			<label>Processor</label>
+			<select name="processor_eq">
+				<option value="">Select</option>
+				<option value="intel">Intel</option>
+				<option value="amd">AMD</option>
+			</select>
+		</div>
+		<div>
+			<label>Memory</label>
+			<select name="memory_eq">
+				<option value="">Select</option>
+				<option value="8">8</option>
+				<option value="16">16</option>
+				<option value="32">32</option>
+			</select>
+		</div>
+		<div>
+			<label>Frequency Min</label>
+			<input type="number" name="frequency_gt" min="1" max="5" value=""></input>
+		</div>
+		<div>
+			<label>Frequency Max</label>
+			<input type="number" name="frequency_lt" min="1" max="5" value=""></input>
+		</div>
+	</form>
+	<div class="result"></div>
 </body>
-<script src="src/scripts/find.js"></script>
 <script src="dist/main.js"></script>
 </html>
