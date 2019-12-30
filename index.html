@@ -50,6 +50,31 @@
 		</div>
 	</form>
 	<div class="result"></div>
+	<h2>Состояния</h2>
+	<div data-editable-target="name"><i>name</i></div>
+	<div data-editable-target="email"><i>email</i></div>
+	<h2>Списки и задачи</h2>
+	<div class="row">
+		<div class="col-2">
+			<h3>Lists</h3>
+			<form data-container="new-list-form">
+				<input type="text" class="form-control mb-2" name="name">
+				<input type="submit" class="btn btn-primary btn-sm" value="Add">
+			</form>
+			<div data-container="lists">
+				
+			</div>
+		</div>
+		<div class="col-10">
+			<h3>Tasks</h3>
+			<form class="form-inline" data-container="new-task-form">
+				<input type="text" class="form-control mr-2" name="name">
+				<input type="submit" class="btn btn-primary" value="Add">
+			</form>
+			<div data-container="tasks">
+			</div>
+		</div>
+	</div>
 </body>
 <script src="dist/main.js"></script>
 </html>
